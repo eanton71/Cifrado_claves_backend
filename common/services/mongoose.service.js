@@ -10,7 +10,7 @@ const options = {
 }
 
 const connectWithRetry = ()=>{
-    console.log('Mongo connection with retry');
+    console.log('Mongo connection with retry'); 
     mongoose.set('strictQuery',true);
     mongoose.connect(config.parsed.MONGO_CFG,options)
     .then(()=>{
